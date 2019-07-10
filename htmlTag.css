@@ -1,0 +1,92 @@
+body,html{
+	margin: 0;
+}
+main{
+	padding: 15px;
+	margin-left: 315px;
+}
+nav{
+	padding: 15px;
+	position: fixed;
+	width: 300px;
+	overflow: auto;
+}
+#navbar header, div h2{
+	font-family: 'Varela Round', sans-serif;
+}
+#navbar a{
+	display: block;
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	text-decoration: none;
+	text-align: center;
+	padding: 15px;
+	border-top: 1px solid #e5674f;
+	border-bottom: 1px solid #e5674f;
+}
+#navbar a:hover{
+	background-color: #e5674f;
+}
+.main-section{
+	margin-bottom: 25px;
+	border-left: 5px solid #e5674f;
+	padding: 5px;
+}
+code{
+	background-color: #e7e7e7;
+	border-radius: 5px;
+	padding: 15px;
+	display: block;
+	transition: 0.5s;
+}
+code:hover{
+	transform: scale(1.02);
+}
+.main-section header{
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+.tag-symbols{
+	color: blue;
+}
+.attribute{
+	color: purple;
+}
+.attribute-value{
+	color: green;
+}
+.tag-name{
+	color: orange;
+}
+header{
+	font-size: 1.5rem;
+	font-weight:800;
+}
+footer{
+	font-family:'Varela Round', sans-serif;
+	background-color: #e5674f;
+	display: flex;
+	padding: 20px;
+	justify-content: space-between;
+}
+footer .social-links a{
+	padding: 10px;
+}
+@media screen and (max-width: 768px){
+	nav{
+		position: relative;
+		width: 100%;
+		height:250px;
+	}
+	#navbar div{
+		height: 220px;
+		overflow-y: auto;
+	}
+	main{
+		margin-left: auto;
+	}
+}
+@media screen and (max-width: 490px){
+	footer{
+		display: block;
+		text-align: center;
+	}
+}	

@@ -1,19 +1,21 @@
 body, *{
 	margin: 0 auto;
-	/* overflow-x: auto; */
+	overflow-x: hidden;
 	scroll-behavior: smooth;
 	line-height: 1.5;
 }
 main{
-	padding: 15px;
 	margin: auto;
-}
-.body-wrapper{
-	display: flex;
-	max-width: 100vw;
+	width: 63%;
+	float: right;
 }
 nav{
-	padding: 15px;
+	position: fixed;
+	float: left;
+	top: 40%;
+	transform: translateY(-40%);
+	margin: 1rem;
+	width: 33%;
 }
 #navbar header, div h2{
 	font-family: 'Varela Round', sans-serif;
@@ -53,10 +55,11 @@ nav{
 form *{
   margin: .5rem;
 }
-pre, code{
+pre{
 	display: inline-block;
 	width: 90%;
 	margin: auto;
+	overflow: auto;
 }
 button{
   margin: 1rem;
@@ -91,11 +94,18 @@ footer .social-links a{
 	color: white;
 }
 @media screen and (max-width: 768px){
-	nav{
-		width: 100vw;
+	nav, main{
+		width: 98%;
+		position: relative;
+		margin: 1rem auto;
+		float: none;
+		/* top: 0; */
+		transform: translateY(0);
 	}
 	.body-wrapper{
+		display: flex;
 		flex-direction: column;
+		justify-content: space-evenly;
 	}
 	footer{
 		display: block;

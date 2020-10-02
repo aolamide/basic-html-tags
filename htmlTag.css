@@ -6,16 +6,15 @@ body, *{
 }
 main{
 	margin: auto;
-	width: 63%;
+	width: 65%;
 	float: right;
 }
 nav{
 	position: fixed;
 	float: left;
-	top: 40%;
-	transform: translateY(-40%);
+	top: 1.5rem;
 	margin: 1rem;
-	width: 33%;
+	width: 30%;
 }
 #navbar header, div h2{
 	font-family: 'Varela Round', sans-serif;
@@ -85,13 +84,15 @@ footer{
 	font-family:'Varela Round', sans-serif;
 	background-color: #e5674f;
 	display: flex;
-	padding: 20px;
+	padding: 20px 0;
 	justify-content: space-between;
 	width: 100vw;
 }
-footer .social-links a{
-	padding: 10px;
+.social-links a i{
+	margin: 0 1rem;
 	color: white;
+	font-size: 1.3rem;
+	overflow: hidden;
 }
 @media screen and (max-width: 768px){
 	nav, main{
@@ -105,7 +106,6 @@ footer .social-links a{
 	.body-wrapper{
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
 	}
 	footer{
 		display: block;

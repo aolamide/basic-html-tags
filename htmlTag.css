@@ -88,8 +88,15 @@ footer{
 	justify-content: space-between;
 	width: 100vw;
 }
+footer a{
+	color: black;
+	transition: color .5s;
+}
+footer a:hover{
+	color: white;
+}
 .social-links a i{
-	margin: 0 1rem;
+	margin: .5rem 1rem;
 	color: white;
 	font-size: 1.3rem;
 	overflow: hidden;
@@ -100,7 +107,6 @@ footer{
 		position: relative;
 		margin: 1rem auto;
 		float: none;
-		/* top: 0; */
 		transform: translateY(0);
 	}
 	.body-wrapper{
